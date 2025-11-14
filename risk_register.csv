@@ -1,0 +1,532 @@
+ip_address,asset_name,asset_owner,asset_criticality,vuln_name,description,cvss,likelihood,impact,risk_score
+192.168.56.101,Metasploitable 2,KillChain,5,Possible Backdoor: Ingreslock,The service is answering to an 'id;' command with the following response: uid=0(root) gid=0(root),10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,TWiki XSS and Command Execution Vulnerabilities,"Installed version: 01.Feb.2003
+Fixed version:     4.2.4",10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,rlogin Passwordless Login,It was possible to gain root access without a password.,10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,Operating System (OS) End of Life (EOL) Detection,"The ""Ubuntu"" Operating System on the remote host has reached the end of life.
+
+CPE:               cpe:/o:canonical:ubuntu_linux:8.04
+Installed version,
+build or SP:       8.04
+EOL date:          2013-05-09
+EOL info:          https://wiki.ubuntu.com/Releases",10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,Distributed Ruby (dRuby/DRb) Multiple RCE Vulnerabilities,"The service is running in $SAFE >= 1 mode. However it is still possible to run arbitrary syscall commands on the remote host. Sending an invalid syscall the service returned the following response:
+
+Flo:Errno::ENOSYS:bt[""3/usr/lib/ruby/1.8/drb/drb.rb:1555:in `syscall'""0/usr/lib/ruby/1.8/drb/drb.rb:1555:in `send'""4/usr/lib/ruby/1.8/drb/drb.rb:1555:in `__send__'""A/usr/lib/ruby/1.8/drb/drb.rb:1555:in `perform_without_block'""3/usr/lib/ruby/1.8/drb/drb.rb:1515:in `perform'""5/usr/lib/ruby/1.8/drb/drb.rb:1589:in `main_loop'""0/usr/lib/ruby/1.8/drb/drb.rb:1585:in `loop'""5/usr/lib/ruby/1.8/drb/drb.rb:1585:in `main_loop'""1/usr/lib/ruby/1.8/drb/drb.rb:1581:in `start'""5/usr/lib/ruby/1.8/drb/drb.rb:1581:in `main_loop'""//usr/lib/ruby/1.8/drb/drb.rb:1430:in `run'""1/usr/lib/ruby/1.8/drb/drb.rb:1427:in `start'""//usr/lib/ruby/1.8/drb/drb.rb:1427:in `run'""6/usr/lib/ruby/1.8/drb/drb.rb:1347:in `initialize'""//usr/lib/ruby/1.8/drb/drb.rb:1627:in `new'""9/usr/lib/ruby/1.8/drb/drb.rb:1627:in `start_service'""%/usr/sbin/druby_timeserver.rb:12:errnoi+:mesg""Function not implemented",10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,The rexec service is running,The rexec service was detected on the target system.,10.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,vsftpd Compromised Source Packages Backdoor Vulnerability,,9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,Apache Tomcat AJP RCE Vulnerability (Ghostcat) - Active Check,"It was possible to read the file ""/WEB-INF/web.xml"" through the AJP connector.
+
+Result:
+
+AB 8\x0004 Ã\x0088 \x0002OK  \x0001 \x000CContent-Type  \x001Ctext/html;charset=ISO-8859-1 AB\x001FÃ¼\x0003\x001FÃ¸<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the ""License""); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an ""AS IS"" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<?xml version=""1.0"" encoding=""ISO-8859-1""?>
+<!DOCTYPE html PUBLIC ""-//W3C//DTD XHTML 1.0 Strict//EN""
+   ""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"">
+
+<html xmlns=""http://www.w3.org/1999/xhtml"" xml:lang=""en"" lang=""en"">
+    <head>
+    <title>Apache Tomcat/5.5</title>
+    <style type=""text/css"">
+    /*<![CDATA[*/
+      body {
+          color: #000000;
+          background-color: #FFFFFF;
+	  font-family: Arial, ""Times New Roman"", Times, serif;
+          margin: 10px 0px;
+      }
+
+    img {
+       border: none;
+    }
+    
+    a:link, a:visited {
+        color: blue
+    }
+
+    th {
+        font-family: Verdana, ""Times New Roman"", Times, serif;
+        font-size: 110%;
+        font-weight: normal;
+        font-style: italic;
+        background: #D2A41C;
+        text-align: left;
+    }
+
+    td {
+        color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    td.menu {
+        background: #FFDC75;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .code {
+        color: #000000;
+        font-family: ""Courier New"", Courier, monospace;
+        font-size: 110%;
+        margin-left: 2.5em;
+    }
+    
+     #banner {
+        margin-bottom: 12px;
+     }
+
+     p#congrats {
+         margin-top: 0;
+         font-weight: bold;
+         text-align: center;
+     }
+
+     p#footer {
+         text-align: right;
+         font-size: 80%;
+     }
+     /*]]>*/
+   </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<table id=""banner"" width=""100%"">
+    <tr>
+      <td align=""left"" style=""width:130px"">
+        <a href=""http://tomcat.apache.org/"">
+	  <img src=""tomcat.gif"" height=""92"" width=""130"" alt=""The Mighty Tomcat - MEOW!""/>
+	</a>
+      </td>
+      <td align=""left"" valign=""top""><b>Apache Tomcat/5.5</b></td>
+      <td align=""right"">
+        <a href=""http://www.apache.org/"">
+	  <img src=""asf-logo-wide.gif"" height=""51"" width=""537"" alt=""The Apache Software Foundation""/>
+	</a>
+       </td>
+     </tr>
+</table>
+
+<table>
+    <tr>
+
+        <!-- Table of Contents -->
+        <td valign=""top"">
+            <table width=""100%"" border=""1"" cellspacing=""0"" cellpadding=""3"">
+                <tr>
+		  <th>Administration</th>
+                </tr>
+                <tr>
+		  <td class=""menu"">
+		    <a href=""manager/status"">Status</a><br/>
+                    <a href=""admin"">Tomcat&nbsp;Administration</a><br/>
+                    <a href=""manager/html"">Tomcat&nbsp;Manager</a><br/>
+                    &nbsp;
+                  </td>
+                </tr>
+            </table>
+
+	    <br />
+            <table width=""100%"" border=""1"" cellspacing=""0"" cellpadding=""3"">
+                <tr>
+		  <th>Documentation</th>
+                </tr>
+                <tr>
+                  <td class=""menu"">
+                    <a href=""RELEASE-NOTES.txt"">Release&nbsp;Notes</a><br/>
+                    <a href=""tomcat-docs/changelog.html"">Change&nbsp;Log</a><br/>
+                    <a href=""tomcat-docs"">Tomcat&nbsp;Documentation</a><br/>                        &nbsp;
+                    &nbsp;
+		    </td>
+                </tr>
+            </table>
+	    
+            <br/>
+            <table width=""100%"" border=""1"" cellspacing=""0"" cellpadding=""3"">
+                <tr>
+                  <th>Tomcat Online</th>
+                </tr>
+                <tr>
+                  <td class=""menu"">
+                    <a href=""http://tomcat.apache.org/"">Home&nbsp;Page</a><br/>
+		    <a href=""http://tomcat.apache.org/faq/"">FAQ</a><br/>
+                    <a href=""http://tomcat.apache.org/bugreport.html"">Bug&nbsp;Database</a><br/>
+                    <a href=""http://issues.apache.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bug_status=RESOLVED&amp;resolution=LATER&amp;resolution=REMIND&amp;resolution=---&amp;bugidtype=include&amp;product=Tomcat+5&amp;cmdtype=doit&amp;order=Importance"">Open Bugs</a><br/>
+                    <a href=""http://mail-archives.apache.org/mod_mbox/tomcat-users/"">Users&nbsp;Mailing&nbsp;List</a><br/>
+                    <a href=""http://mail-archives.apache.org/mod_mbox/tomcat-dev/"">Developers&nbsp;Mailing&nbsp;List</a><br/>
+                    <a href=""irc://irc.freenode.net/#tomcat"">IRC</a><br/>
+		    &nbsp;
+                  </td>
+                </tr>
+            </table>
+	    
+            <br/>
+            <table width=""100%"" border=""1"" cellspacing=""0"" cellpadding=""3"">
+                <tr>
+                  <th>Examples</th>
+                </tr>
+                <tr>
+                  <td class=""menu"">
+                    <a href=""jsp-examples/"">JSP&nbsp;Examples</a><br/>
+                    <a href=""servlets-examples/"">Servlet&nbsp;Examples</a><br/>
+                    <a href=""webdav/"">WebDAV&nbsp;capabilities</a><br/>
+     		    &nbsp;
+                  </td>
+                </tr>
+            </table>
+	    
+            <br/>
+            <table width=""100%"" border=""1"" cellspacing=""0"" cellpadding=""3"">
+                <tr>
+		  <th>Miscellaneous</th>
+                </tr>
+                <tr>
+                  <td class=""menu"">
+                    <a href=""http://java.sun.com/products/jsp"">Sun's&nbsp;Java&nbsp;Server&nbsp;Pages&nbsp;Site</a><br/>
+                    <a href=""http://java.sun.com/products/servlet"">Sun's&nbsp;Servlet&nbsp;Site</a><br/>
+    		    &nbsp;
+                  </td>
+                </tr>
+            </table>
+        </td>
+
+        <td style=""width:20px"">&nbsp;</td>
+	
+        <!-- Body -->
+        <td align=""left"" valign=""top"">
+          <p id=""congrats"">If you're seeing this page via a web browser, it means you've setup Tomcat successfully. Congratulations!</p>
+ 
+          <p>As you may have guessed by now, this is the default Tomcat home page. It can be found on the local filesystem at:</p>
+          <p class=""code"">$CATALINA_HOME/webapps/ROOT/index.jsp</p>
+	  
+          <p>where ""$CATALINA_HOME"" is the root of the Tomcat installation directory. If you're seeing this page, and you don't think you should be, then either you're either a user who has arrived at new installation of Tomcat, or you're an administrator who hasn't got his/her setup quite right. Providing the latter is the case, please refer to the <a href=""tomcat-docs"">Tomcat Documentation</a> for more detailed setup and administration information than is found in the INSTALL file.</p>
+
+            <p><b>NOTE:</b> This page is precompiled. If you change it, this page will not change since
+                  it was compiled into a servlet at build time.
+                  (See <tt>$CATALINA_HOME/webapps/ROOT/WEB-INF/web.xml</tt> as to how it was mapped.)
+            </p>
+
+            <p><b>NOTE: For security reasons, using the administration webapp
+            is restricted to users with role ""admin"". The manager webapp
+            is restricted to users with role ""manager"".</b>
+            Users are defined in <code>$CATALINA_HOME/conf/tomcat-users.xml</code>.</p>
+
+            <p>Included with this release are a host of sample Servlets and JSPs (with associated source code), extensive documentation (including the Servlet 2.4 and JSP 2.0 API JavaDoc), and an introductory guide to developing web applications.</p>
+
+            <p>Tomcat mailing lists are available at the Tomcat project web site:</p>
+
+           <ul>
+               <li><b><a href=""mailto:users@tomcat.apache.org"">users@tomc",9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,MySQL / MariaDB Default Credentials (MySQL Protocol),"It was possible to login as user ""root"" with an empty password.",9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,"PHP < 5.3.13, 5.4.x < 5.4.3 Multiple Vulnerabilities - Active Check","By doing the following HTTP POST request:
+
+""HTTP POST"" body : <?php phpinfo();?>
+URL              : http://192.168.56.101/cgi-bin/php?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E
+
+it was possible to execute the ""<?php phpinfo();?>"" command.
+
+Result:
+  <title>phpinfo()</title><meta name=""ROBOTS"" content=""NOINDEX,NOFOLLOW,NOARCHIVE"" /></head>
+  <tr><td class=""e"">Configuration File (php.ini) Path </td><td class=""v"">/etc/php5/cgi </td></tr>
+  <h2>PHP Variables</h2>",9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,"PHP < 5.6.30, 7.x < 7.0.15, 7.1.x < 7.1.1 Multiple Vulnerabilities (Jan 2017) - Linux","Installed version: 5.2.4
+Fixed version:     5.6.30
+Installation
+path / port:       80/tcp",9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,vsftpd Compromised Source Packages Backdoor Vulnerability,,9.8,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,DistCC RCE Vulnerability (CVE-2004-2687),"It was possible to execute the ""id"" command.
+
+Result: uid=1(daemon) gid=1(daemon)",9.3,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,VNC Brute Force Login,It was possible to connect to the VNC server with the password: password,9.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,PostgreSQL Default Credentials (PostgreSQL Protocol),"It was possible to login as user postgres with password ""postgres"".",9.0,5,5,25
+192.168.56.101,Metasploitable 2,KillChain,5,rsh Unencrypted Cleartext Login,The rsh service currently has issues with name resolution and is not allowing connections from this host.,7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,The rlogin service is running,The rlogin service is running on the target system.,7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,FTP Brute Force Logins With Default Credentials Reporting,"It was possible to login with the following credentials <User>:<Password>
+
+msfadmin:msfadmin
+postgres:postgres
+service:service
+user:user",7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,FTP Brute Force Logins With Default Credentials Reporting,"It was possible to login with the following credentials <User>:<Password>
+
+msfadmin:msfadmin
+postgres:postgres
+service:service
+user:user",7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,Java RMI Server Insecure Default Configuration RCE Vulnerability - Active Check,"By doing an RMI request it was possible to trigger the vulnerability and make the remote host sending a request back to the scanner host (Details on the received packet follows).
+
+Destination IP:   192.168.56.102 (receiving IP on scanner host side)
+Destination port: 10906/tcp (receiving port on scanner host side)
+Originating IP:   192.168.56.101 (originating IP from target host side)",7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,Test HTTP dangerous methods,"We could upload the following files via the PUT method at this web server:
+
+http://192.168.56.101/dav/puttest262130209.html
+
+We could delete the following files via the DELETE method at this web server:
+
+http://192.168.56.101/dav/puttest262130209.html",7.5,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: OpenSSL CCS Man in the Middle Security Bypass Vulnerability,,7.4,4,5,20
+192.168.56.101,Metasploitable 2,KillChain,5,Multiple Vendors STARTTLS Implementation Plaintext Arbitrary Command Injection Vulnerability,,6.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,TWiki Cross-Site Request Forgery Vulnerability (Sep 2010),"Installed version: 01.Feb.2003
+Fixed version:     4.3.2",6.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Anonymous FTP Login Reporting,"It was possible to login to the remote FTP service with the following anonymous account(s):
+
+anonymous:anonymous@example.com
+ftp:anonymous@example.com",6.4,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,TWiki < 6.1.0 XSS Vulnerability,"Installed version: 01.Feb.2003
+Fixed version:     6.1.0",6.1,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,jQuery < 1.9.0 XSS Vulnerability,"Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu/jquery.min.js
+
+Detection info (see OID: 1.3.6.1.4.1.25623.1.0.150658 for more info):
+- Identified file: http://192.168.56.101/mutillidae/javascript/ddsmoothmenu/jquery.min.js
+- Referenced at:   http://192.168.56.101/mutillidae/",6.1,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,TWiki CSRF Vulnerability,"Installed version: 01.Feb.2003
+Fixed version:     4.3.1",6.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Samba 3.0.0 <= 3.0.25rc3 MS-RPC Remote Shell Command Execution Vulnerability - Active Check,"By sending a special crafted SMB request it was possible to execute ``ping -p 5f474256543432343733323938325f -c50 192.168.56.102`` on the remote host.
+
+Received answer (ICMP ""Data"" field):
+
+0x00:  0F 11 17 69 05 14 0A 00 37 33 32 39 38 32 5F 5F    ...i....732982__
+0x10:  47 42 56 54 34 32 34 37 33 32 39 38 32 5F 5F 47    GBVT424732982__G
+0x20:  42 56 54 34 32 34 37 33 32 39 38 32 5F 5F 47 42    BVT424732982__GB
+0x30:  56 54 34 32 34 37 33 32                            VT424732",6.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Report Weak Cipher Suites,"'Weak' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_RC4_128_SHA",5.9,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,In addition to TLSv1.0+ the service is also providing the deprecated SSLv3 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.,5.9,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection,In addition to TLSv1.0+ the service is also providing the deprecated SSLv2 and SSLv3 protocols and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.,5.9,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,HTTP Debugging Methods (TRACE/TRACK) Enabled,The web server has the following HTTP methods enabled: TRACE,5.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Weak Host Key Algorithm(s) (SSH),"The remote SSH server supports the following weak host key algorithm(s):
+
+host key algorithm | Description
+-----------------------------------------------------------------------------------------
+ssh-dss            | Digital Signature Algorithm (DSA) / Digital Signature Standard (DSS)",5.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,phpinfo() Output Reporting (HTTP),"The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+http://192.168.56.101/mutillidae/phpinfo.php
+Concluded from:
+  <title>phpinfo()</title><meta name=""ROBOTS"" content=""NOINDEX,NOFOLLOW,NOARCHIVE"" /></head>
+  <tr><td class=""e"">Configuration File (php.ini) Path </td><td class=""v"">/etc/php5/cgi </td></tr>
+  <h2>PHP Variables</h2>
+
+http://192.168.56.101/phpinfo.php
+Concluded from:
+  <title>phpinfo()</title><meta name=""ROBOTS"" content=""NOINDEX,NOFOLLOW,NOARCHIVE"" /></head>
+  <tr><td class=""e"">Configuration File (php.ini) Path </td><td class=""v"">/etc/php5/cgi </td></tr>
+  <h2>PHP Variables</h2>",5.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2048 bits,"The remote SSL/TLS server is using the following certificate(s) with a RSA key with less than 2048 bits (public-key-size:public-key-algorithm:serial:issuer):
+
+1024:RSA:00FAF93A4C7FB6B9CC:1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX (Server certificate)",5.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2048 bits,"The remote SSL/TLS server is using the following certificate(s) with a RSA key with less than 2048 bits (public-key-size:public-key-algorithm:serial:issuer):
+
+1024:RSA:00FAF93A4C7FB6B9CC:1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX (Server certificate)",5.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Weak Key Exchange (KEX) Algorithm(s) Supported (SSH),"The remote SSH server supports the following weak KEX algorithm(s):
+
+KEX algorithm                      | Reason
+-------------------------------------------------------------------------------------------
+diffie-hellman-group-exchange-sha1 | Using SHA-1
+diffie-hellman-group1-sha1         | Using Oakley Group 2 (a 1024-bit MODP group) and SHA-1",5.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Certificate Expired,"The certificate of the remote service expired on 2010-04-16 14:07:45.
+
+Certificate details:
+fingerprint (SHA-1)             | ED093088706603BFD5DC237399B498DA2D4D31C6
+fingerprint (SHA-256)           | E7A7FA0D63E457C7C4A59B38B70849C6A70BDA6F830C7AF1E32DEE436DE813CC
+issued by                       | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+public key algorithm            | RSA
+public key size (bits)          | 1024
+serial                          | 00FAF93A4C7FB6B9CC
+signature algorithm             | sha1WithRSAEncryption
+subject                         | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+subject alternative names (SAN) | None
+valid from                      | 2010-03-17 14:07:45 UTC
+valid until                     | 2010-04-16 14:07:45 UTC",5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Check if Mailserver answer to VRFY and EXPN requests,'VRFY root' produces the following answer: 252 2.0.0 root,5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,"SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.0          | 10",5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,"SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.0          | 10",5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,QWikiwiki directory traversal vulnerability,Vulnerable URL: http://192.168.56.101/mutillidae/index.php?page=../../../../../../../../../../../etc/passwd%00,5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,awiki <= 20100125 Multiple LFI Vulnerabilities - Active Check,Vulnerable URL: http://192.168.56.101/mutillidae/index.php?page=/etc/passwd,5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Certificate Expired,"The certificate of the remote service expired on 2010-04-16 14:07:45.
+
+Certificate details:
+fingerprint (SHA-1)             | ED093088706603BFD5DC237399B498DA2D4D31C6
+fingerprint (SHA-256)           | E7A7FA0D63E457C7C4A59B38B70849C6A70BDA6F830C7AF1E32DEE436DE813CC
+issued by                       | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+public key algorithm            | RSA
+public key size (bits)          | 1024
+serial                          | 00FAF93A4C7FB6B9CC
+signature algorithm             | sha1WithRSAEncryption
+subject                         | 1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+subject alternative names (SAN) | None
+valid from                      | 2010-03-17 14:07:45 UTC
+valid until                     | 2010-04-16 14:07:45 UTC",5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,/doc directory browsable,Vulnerable URL: http://192.168.56.101/doc/,5.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,VNC Server Unencrypted Data Transmission,"The VNC server provides the following insecure or cryptographically weak Security Type(s):
+
+2 (VNC authentication)",4.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,FTP Unencrypted Cleartext Login,"The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Non-anonymous sessions: 331 Password required for gbvt
+Anonymous sessions:     331 Password required for anonymous",4.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,FTP Unencrypted Cleartext Login,"The remote FTP service accepts logins without a previous sent 'AUTH TLS' command. Response(s):
+
+Non-anonymous sessions: 331 Please specify the password.
+Anonymous sessions:     331 Please specify the password.",4.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Telnet Unencrypted Cleartext Login,,4.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Cleartext Transmission of Sensitive Information via HTTP,"The following input fields were identified (URL:input name):
+
+http://192.168.56.101/dvwa/login.php:password
+http://192.168.56.101/phpMyAdmin/:pma_password
+http://192.168.56.101/phpMyAdmin/?D=A:pma_password
+http://192.168.56.101/tikiwiki/tiki-install.php:pass
+http://192.168.56.101/twiki/bin/view/TWiki/TWikiUserAuthentication:oldpassword",4.8,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,jQuery < 1.6.3 XSS Vulnerability,"Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu/jquery.min.js
+
+Detection info (see OID: 1.3.6.1.4.1.25623.1.0.150658 for more info):
+- Identified file: http://192.168.56.101/mutillidae/javascript/ddsmoothmenu/jquery.min.js
+- Referenced at:   http://192.168.56.101/mutillidae/",4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection,The service is only providing the deprecated TLSv1.0 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.,4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Weak Encryption Algorithm(s) Supported (SSH),"The remote SSH server supports the following weak client-to-server encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+
+
+The remote SSH server supports the following weak server-to-client encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se",4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,phpMyAdmin 'error.php' Cross Site Scripting Vulnerability,,4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection,The service is only providing the deprecated TLSv1.0 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.,4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: RSA Temporary Key Handling 'RSA_EXPORT' Downgrade Issue (FREAK),"'RSA_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5
+
+'RSA_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5
+TLS_RSA_EXPORT_WITH_RC4_40_MD5",4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,Apache HTTP Server 'httpOnly' Cookie Information Disclosure Vulnerability,,4.3,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,Server Temporary Key Size: 1024 bits,4.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,"The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+Signature Algorithm:  sha1WithRSAEncryption",4.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Certificate Signed Using A Weak Signature Algorithm,"The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              1.2.840.113549.1.9.1=#726F6F74407562756E74753830342D626173652E6C6F63616C646F6D61696E,CN=ubuntu804-base.localdomain,OU=Office for Complication of Otherwise Simple Affairs,O=OCOSA,L=Everywhere,ST=There is no such thing outside US,C=XX
+Signature Algorithm:  sha1WithRSAEncryption",4.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability,Server Temporary Key Size: 1024 bits,4.0,3,5,15
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: 'DHE_EXPORT' MITM Security Bypass Vulnerability (LogJam),"'DHE_EXPORT' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5
+
+'DHE_EXPORT' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA
+TLS_DH_anon_EXPORT_WITH_RC4_40_MD5",3.7,2,5,10
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),,3.4,2,5,10
+192.168.56.101,Metasploitable 2,KillChain,5,SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE),,3.4,2,5,10
+192.168.56.101,Metasploitable 2,KillChain,5,Weak MAC Algorithm(s) Supported (SSH),"The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+umac-64@openssh.com",2.6,2,5,10
+192.168.56.101,Metasploitable 2,KillChain,5,TCP Timestamps Information Disclosure,"It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 3029343
+Packet 2: 3029449",2.6,2,5,10
+192.168.56.101,Metasploitable 2,KillChain,5,ICMP Timestamp Reply Information Disclosure,"The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0",2.1,2,5,10
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1
+,(unknown),,1,(unknown),,,1,1,1

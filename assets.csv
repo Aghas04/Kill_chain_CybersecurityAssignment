@@ -1,0 +1,2 @@
+ip_address,asset_name,asset_owner,asset_criticality
+192.168.56.101,Metasploitable 2,KillChain,5
